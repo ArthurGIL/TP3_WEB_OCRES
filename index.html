@@ -20,12 +20,11 @@
     <!-- Axios -->
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
-  <body onload="start()">
+  <body onload="launch()">
     <div
       class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm"
     >
       <h5 class="my-0 mr-md-auto font-weight-normal">METEO PREDICTION TP3</h5>
-      <button id="city-input-button" class="btn btn-success" type="submit" onclick="getThreeDayForecast()">Test</button>
     </div>
 
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -39,7 +38,7 @@
       <div class="input-group mb-5 offset-4 col-4">
         <input id="city-input" type="text" class="form-control" placeholder="Rentrer le nom d'une ville">
         <div class="input-group-append">
-          <button id="city-input-button" class="btn btn-success" type="submit" onclick="start()">Actualiser</button>
+          <button id="city-input-button" class="btn btn-success" type="submit" onclick="launch()">Actualiser</button>
         </div>
       </div>
     </div>
@@ -69,12 +68,12 @@
             <h4 class="my-0 font-weight-normal">Demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="1d-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="1d-forecast-more-info"></p>
+              <div id="1d-icon-weather-container" ></div>
+              <h3 id="1d-forecast-temp"> </h3>
             </div>
           </div>
         </div>
@@ -83,12 +82,12 @@
             <h4 class="my-0 font-weight-normal">Après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="2d-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="2d-forecast-more-info"></p>
+              <div id="2d-icon-weather-container" ></div>
+              <h3 id="2d-forecast-temp"> </h3>
             </div>
           </div>
         </div>
@@ -97,12 +96,12 @@
             <h4 class="my-0 font-weight-normal">Encore après demain</h4>
           </div>
           <div class="card-body">
-            <h2 id="today-forecast-main" class="card-title">
+            <h2 id="3d-forecast-main" class="card-title">
             </h2>
             <div>
-              <p id="today-forecast-more-info"></p>
-              <div id="icon-weather-container" ></div>
-              <h3 id="today-forecast-temp"> </h3>
+              <p id="3d-forecast-more-info"></p>
+              <div id="3d-icon-weather-container" ></div>
+              <h3 id="3d-forecast-temp"> </h3>
             </div>
           </div>
         </div>
