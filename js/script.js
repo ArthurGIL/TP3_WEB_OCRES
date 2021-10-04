@@ -35,7 +35,6 @@ function start() {
     });
 }
 
-
 function getThreeDayForecast(){
   //initialisation de city
   city = document.getElementById("city-input").value;
@@ -72,7 +71,6 @@ function getThreeDayForecast(){
       document.getElementById('2d-forecast-more-info').innerHTML = description2;
       document.getElementById('2d-icon-weather-container').innerHTML = icon2;
       document.getElementById('2d-forecast-temp').innerHTML = `${temp2}°C`;
-
 
 
       // On récupère l'information pour le j+3
